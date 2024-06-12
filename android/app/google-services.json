@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "174176186593",
+    "firebase_url": "https://projeto-farmacia-rlf-default-rtdb.firebaseio.com",
+    "project_id": "projeto-farmacia-rlf",
+    "storage_bucket": "projeto-farmacia-rlf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174176186593:android:1946a3761bf43c3d8bc7a0",
+        "android_client_info": {
+          "package_name": "com.example.ex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDujBHFbDeHENIust8IC0ULE_VKF40fbfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+{
+  "app_title": "Administrador de Tareas",
+  "configurations": "Configuraciones",
+  "user_profile": "Perfil del Usuario",
+  "user_name": "Nombre",
+  "user_email": "Correo Electrónico",
+  "change_password": "Cambiar Contraseña",
+  "current_password": "Contraseña Actual",
+  "new_password": "Nueva Contraseña",
+  "confirm_new_password": "Confirmar Nueva Contraseña",
+  "save": "Guardar",
+  "app_preferences": "Preferencias de la Aplicación",
+  "dark_theme": "Tema Oscuro",
+  "language": "Idioma",
+  "notifications": "Notificaciones",
+  "password_changed_success": "Contraseña cambiada con éxito",
+  "error_saving_changes": "Error al guardar los cambios",
+  "changes_saved_success": "Cambios guardados con éxito",
+  "new_password_mismatch": "La nueva contraseña y la confirmación no coinciden",
+  "fill_all_password_fields": "Complete todos los campos de la contraseña"
+}

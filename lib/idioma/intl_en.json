@@ -1,0 +1,21 @@
+{
+  "app_title": "Task Manager",
+  "configurations": "Settings",
+  "user_profile": "User Profile",
+  "user_name": "Name",
+  "user_email": "Email",
+  "change_password": "Change Password",
+  "current_password": "Current Password",
+  "new_password": "New Password",
+  "confirm_new_password": "Confirm New Password",
+  "save": "Save",
+  "app_preferences": "App Preferences",
+  "dark_theme": "Dark Theme",
+  "language": "Language",
+  "notifications": "Notifications",
+  "password_changed_success": "Password changed successfully",
+  "error_saving_changes": "Error saving changes",
+  "changes_saved_success": "Changes saved successfully",
+  "new_password_mismatch": "The new password and confirmation do not match",
+  "fill_all_password_fields": "Fill in all password fields"
+}

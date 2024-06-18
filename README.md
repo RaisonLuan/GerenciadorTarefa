@@ -8,10 +8,6 @@ Um aplicativo Flutter para gerenciar tarefas e prazos de validade.
 - [Funcionalidades](#funcionalidades)
 - [Instalação](#instalação)
 - [Uso](#uso)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Contribuindo](#contribuindo)
-- [Licença](#licença)
-- [Agradecimentos](#agradecimentos)
 
 ## Sobre o Projeto
 

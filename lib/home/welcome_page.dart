@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gerenciador_tarefa01/inicio/home_page.dart';
+import 'package:gerenciador_tarefa01/home/home_page.dart';
 import 'package:gerenciador_tarefa01/login/login_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

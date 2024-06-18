@@ -55,7 +55,7 @@ class _IncluirTarefaPageState extends State<IncluirTarefaPage> {
                   decoration: InputDecoration(labelText: 'Nome da Tarefa'),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return 'Por favor, insira um nome para a tarefa';
+                      return 'Por favor, insira um nome para a tasks';
                     }
                     return null;
                   },
@@ -178,7 +178,7 @@ class _IncluirTarefaPageState extends State<IncluirTarefaPage> {
     if (user != null) {
       try {
         if (_selectedUser != null) {
-          // Atribuir tarefa a um usuário específico
+          // Atribuir tasks a um usuário específico
           await _firestoreService.addTask({
             'name': name,
             'title': title,
@@ -192,12 +192,12 @@ class _IncluirTarefaPageState extends State<IncluirTarefaPage> {
           });
           await _firestoreService.sendNotification({
             'title': 'Nova Tarefa Adicionada',
-            'body': 'A tarefa "$title" foi adicionada.',
+            'body': 'A tasks "$title" foi adicionada.',
             'userId': _selectedUser,
             'createdAt': FieldValue.serverTimestamp(),
           });
         } else {
-          // Disparar tarefa para todos os usuários
+          // Disparar tasks para todos os usuários
           for (Usuario usuario in _usuarios) {
             await _firestoreService.addTask({
               'name': name,
@@ -213,7 +213,7 @@ class _IncluirTarefaPageState extends State<IncluirTarefaPage> {
 
             await _firestoreService.sendNotification({
               'title': 'Nova Tarefa Adicionada',
-              'body': 'A tarefa "$title" foi adicionada.',
+              'body': 'A tasks "$title" foi adicionada.',
               'userId': usuario.id,
               'createdAt': FieldValue.serverTimestamp(),
             });
@@ -229,7 +229,7 @@ class _IncluirTarefaPageState extends State<IncluirTarefaPage> {
         });
       } catch (e) {
         hideProgressIndicator();
-        showErrorMessage('Erro ao adicionar a tarefa: $e');
+        showErrorMessage('Erro ao adicionar a tasks: $e');
       }
     } else {
       hideProgressIndicator();

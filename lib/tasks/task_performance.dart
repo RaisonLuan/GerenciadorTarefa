@@ -159,7 +159,7 @@ class _DesempenhoTarefaPageState extends State<DesempenhoTarefaPage> {
               tasks.isEmpty
                   ? Center(
                 child: Text(
-                  'Nenhuma tarefa disponível.',
+                  'Nenhuma tasks disponível.',
                   style: TextStyle(fontSize: 16),
                 ),
               )
@@ -208,7 +208,7 @@ class _DesempenhoTarefaPageState extends State<DesempenhoTarefaPage> {
   }
 }
 
-// Classe para representar uma tarefa
+// Classe para representar uma tasks
 class Task {
   final String title;
   final String description;

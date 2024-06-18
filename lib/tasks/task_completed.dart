@@ -71,7 +71,7 @@ class TaskList extends StatelessWidget {
 
   // Método para construir a mensagem de estado vazio
   Widget _buildEmptyState() {
-    return Center(child: Text('Nenhuma tarefa encontrada'));
+    return Center(child: Text('Nenhuma tasks encontrada'));
   }
 
   // Método para construir a lista de tarefas
@@ -85,7 +85,7 @@ class TaskList extends StatelessWidget {
     );
   }
 
-  // Método para construir um item de tarefa
+  // Método para construir um item de tasks
   Widget _buildTaskItem(QueryDocumentSnapshot task) {
     return Card(
       child: ListTile(
@@ -96,7 +96,7 @@ class TaskList extends StatelessWidget {
     );
   }
 
-  // Método para construir o checkbox de conclusão da tarefa
+  // Método para construir o checkbox de conclusão da tasks
   Widget _buildTaskCheckbox(QueryDocumentSnapshot task) {
     return Checkbox(
       value: task['isCompleted'],

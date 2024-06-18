@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:gerenciador_tarefa01/configuracao/configuracoes.dart';
+import 'package:gerenciador_tarefa01/settings/settings.dart';
 import 'package:gerenciador_tarefa01/firebase/firestore_service.dart';
-import 'package:gerenciador_tarefa01/login/checagem_page.dart';
-import 'package:gerenciador_tarefa01/notificacao/notificacoespage.dart';
-import 'package:gerenciador_tarefa01/tarefa/desempenhotarefa.dart';
-import 'package:gerenciador_tarefa01/tarefa/incluirtarefa.dart';
-import 'package:gerenciador_tarefa01/tarefa/tarefasatrasada.dart';
-import 'package:gerenciador_tarefa01/tarefa/tarefasconcluidas.dart';
-import 'package:gerenciador_tarefa01/tarefa/tarefasemandamento.dart';
-import 'package:gerenciador_tarefa01/validade/validade.dart';
-import 'package:gerenciador_tarefa01/validade/validade_salva.dart';
+import 'package:gerenciador_tarefa01/login/page_check.dart';
+import 'package:gerenciador_tarefa01/notification/notification_page.dart';
+import 'package:gerenciador_tarefa01/tasks//task_performance.dart';
+import 'package:gerenciador_tarefa01/tasks/include_task.dart';
+import 'package:gerenciador_tarefa01/tasks/task_late.dart';
+import 'package:gerenciador_tarefa01/tasks/task_completed.dart';
+import 'package:gerenciador_tarefa01/tasks/task_in_progress.dart';
+import 'package:gerenciador_tarefa01/validity/validity.dart';
+import 'package:gerenciador_tarefa01/validity/history_validity.dart';
 import 'package:gerenciador_tarefa01/widget/task_list_widget.dart';
 import 'package:gerenciador_tarefa01/uploadimagem/uploadimage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../validade/configuracao_validade.dart';
+import '../validity/configuration_validity.dart';
+
 
 void main() {
   runApp(MaterialApp(

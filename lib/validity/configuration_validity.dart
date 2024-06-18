@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerenciador_tarefa01/firebase/firestore_service.dart';
-import 'package:gerenciador_tarefa01/validade/incluirfuncionario.dart';
+import 'package:gerenciador_tarefa01/validity/include_employee.dart';
 
 class ConfigurarFuncionariosPage extends StatefulWidget {
   @override

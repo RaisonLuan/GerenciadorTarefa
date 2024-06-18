@@ -4,8 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
-import '../inicio/home_page.dart';
-import 'cadastro_page.dart';
+import '../home/home_page.dart';
+import 'registration_page.dart';
 import 'reset_password_page.dart';
 
 class LoginPage extends StatefulWidget {

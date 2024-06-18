@@ -33,7 +33,7 @@ class TaskList extends StatelessWidget {
         } else if (snapshot.hasError) {
           return Center(child: Text('Erro ao carregar tarefas')); // Exibe mensagem de erro
         } else if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-          return Center(child: Text('Nenhuma tarefa encontrada')); // Exibe mensagem de nenhuma tarefa encontrada
+          return Center(child: Text('Nenhuma tasks encontrada')); // Exibe mensagem de nenhuma tasks encontrada
         } else {
           var tasks = snapshot.data!.docs;
           var overdueTasks = tasks.where((task) {
@@ -47,7 +47,7 @@ class TaskList extends StatelessWidget {
           }).toList();
 
           if (overdueTasks.isEmpty) {
-            return Center(child: Text('Nenhuma tarefa atrasada encontrada')); // Exibe mensagem de nenhuma tarefa atrasada encontrada
+            return Center(child: Text('Nenhuma tasks atrasada encontrada')); // Exibe mensagem de nenhuma tasks atrasada encontrada
           }
 
           // Exibe a lista de tarefas atrasadas
@@ -57,12 +57,12 @@ class TaskList extends StatelessWidget {
               var task = overdueTasks[index];
               return Card(
                 child: ListTile(
-                  title: Text(task['title']), // Título da tarefa
-                  subtitle: Text(task['description']), // Descrição da tarefa
+                  title: Text(task['title']), // Título da tasks
+                  subtitle: Text(task['description']), // Descrição da tasks
                   trailing: Checkbox(
-                    value: task['isCompleted'], // Estado da conclusão da tarefa
+                    value: task['isCompleted'], // Estado da conclusão da tasks
                     onChanged: (bool? value) {
-                      // Atualiza o estado de conclusão da tarefa no banco de dados
+                      // Atualiza o estado de conclusão da tasks no banco de dados
                       task.reference.update({'isCompleted': value});
                     },
                   ),

@@ -53,7 +53,7 @@ class _ConfiguracoesPageState extends State<ConfiguracoesPage> {
     });
   }
 
-  /// Carrega o estado do idioma selecionado das preferências compartilhadas
+  /// Carrega o estado do language selecionado das preferências compartilhadas
   Future<void> _carregarEstadoIdioma() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
@@ -222,7 +222,7 @@ class _ConfiguracoesPageState extends State<ConfiguracoesPage> {
     );
   }
 
-  /// Retorna o label do idioma
+  /// Retorna o label do language
   String _getIdiomaLabel(String value) {
     switch (value) {
       case 'pt':
@@ -278,7 +278,7 @@ class _ConfiguracoesPageState extends State<ConfiguracoesPage> {
     prefs.setBool('tema_escuro', temaEscuro);
   }
 
-  /// Salva o estado do idioma nas preferências compartilhadas
+  /// Salva o estado do language nas preferências compartilhadas
   Future<void> _salvarEstadoIdioma(String idioma) async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setString('idioma_selecionado', idioma);
@@ -309,7 +309,7 @@ class _MyAppState extends State<MyApp> {
     _loadLocale();
   }
 
-  /// Carrega o idioma selecionado das preferências compartilhadas
+  /// Carrega o language selecionado das preferências compartilhadas
   void _loadLocale() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     setState(() {
@@ -318,7 +318,7 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  /// Altera o idioma do aplicativo
+  /// Altera o language do aplicativo
   void _changeLocale(String locale) {
     setState(() {
       _locale = locale;

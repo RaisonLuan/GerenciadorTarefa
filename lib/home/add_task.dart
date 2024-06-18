@@ -55,7 +55,7 @@ class _IncluirTarefaPageState extends State<IncluirTarefaPage> {
                 decoration: InputDecoration(labelText: 'Nome da Tarefa'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Por favor, insira um nome para a tarefa';
+                    return 'Por favor, insira um nome para a tasks';
                   }
                   return null;
                 },
@@ -189,7 +189,7 @@ class _IncluirTarefaPageState extends State<IncluirTarefaPage> {
 
         await _firestoreService.sendNotification({
           'title': 'Nova Tarefa Adicionada',
-          'body': 'A tarefa "$title" foi adicionada.',
+          'body': 'A tasks "$title" foi adicionada.',
           'userId': user.uid,
           'createdAt': FieldValue.serverTimestamp(),
         });
@@ -203,7 +203,7 @@ class _IncluirTarefaPageState extends State<IncluirTarefaPage> {
         });
       } catch (e) {
         hideProgressIndicator();
-        showErrorMessage('Erro ao adicionar a tarefa: $e');
+        showErrorMessage('Erro ao adicionar a tasks: $e');
       }
     } else {
       hideProgressIndicator();

@@ -41,7 +41,7 @@ class _TaskListWidgetState extends State<TaskListWidget> {
         } else if (snapshot.hasError) {
           return Center(child: Text('Erro ao carregar tarefas'));
         } else if (!snapshot.hasData || snapshot.data!.docs.isEmpty) {
-          return Center(child: Text('Nenhuma tarefa encontrada'));
+          return Center(child: Text('Nenhuma tasks encontrada'));
         } else {
           var tasks = snapshot.data!.docs;
           if (widget.orderBy == OrderBy.name) {

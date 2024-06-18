@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:gerenciador_tarefa01/firebase/firebase_options.dart';
-import 'package:gerenciador_tarefa01/inicio/bemvindo_page.dart';
+import 'package:gerenciador_tarefa01/home/welcome_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
@@ -27,11 +27,11 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _loadLocale(); // Carregar o idioma salvo
+    _loadLocale(); // Carregar o language salvo
     _loadTheme(); // Carregar o tema salvo
   }
 
-  // Método para carregar o idioma selecionado
+  // Método para carregar o language selecionado
   void _loadLocale() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     String? savedLocale = prefs.getString('last_locale');
@@ -61,7 +61,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Gerenciador de Tarefas',
       theme: _temaEscuro ? ThemeData.dark() : ThemeData.light(),
-      locale: Locale(_locale), // Definir o idioma da aplicação
+      locale: Locale(_locale), // Definir o language da aplicação
       supportedLocales: [
         Locale('en', 'US'),
         Locale('es', 'ES'),
